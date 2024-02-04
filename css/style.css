@@ -343,6 +343,17 @@ h3.my-profession{
     flex: 0 0 50%;
     max-width: 50%;
 }
+.circle-dot h5{
+    font-weight: 600;
+    font-size: 17px;
+    color: #4ba4f8;
+}
+.circle-dot p{
+    margin-left: 8px;
+    margin-bottom: 10px;
+    color: var(--text-black-700);
+}
+
 .about .about-content .personal-info .info-item p{
     font-weight: 600;
     padding: 10px 0px;
@@ -623,6 +634,9 @@ textarea.form-control{
 }
 .form-group {
     text-align: center;
+}
+.form-group button{
+    cursor: pointer;
 }
 
 .style-switcher{
