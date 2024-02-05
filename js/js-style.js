@@ -4,6 +4,7 @@ function toggleDarkTheme() {
    document.body.classList.toggle('dark-theme');
    if(dark.className==="bi bi-moon-fill"){
         dark.className="bi bi-sun-fill"
+   
    }
    else{
     dark.className="bi bi-moon-fill";

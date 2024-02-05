@@ -235,9 +235,14 @@ ul{
     margin-right: 15px;
 }
 .home{
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     color: var(--text-black-900);
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .home .home-info{
     flex: 0 0 60%;
@@ -269,6 +274,16 @@ h3.my-profession{
 }
 .typing{
     color: var(--skin-color);
+    animation: a1 2s alternate-reverse ease-in;
+    margin-bottom: 10px;
+}
+@keyframes a1 {
+    0%{
+        color: var(--skin-color);
+    }
+    100%{
+        color: orange;
+    }
 }
 .home-info p{
     margin-bottom: 70px;
@@ -507,6 +522,7 @@ h3.my-profession{
     transition: all 0.8s ease;
     
 }
+
 .service .service-item .service-item-inner:hover .icon{
     background-color: var(--skin-color);
     transition: all 1s ease;
@@ -696,8 +712,29 @@ textarea.form-control{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img{
-        display: none;
+    .home-img{
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    .home-img::after{
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-bottom: 5px solid var(--skin-color);
+        border-right: 5px solid var(--skin-color);
+        right: -115px;
+        bottom: -15px;
+    }
+    .home-img::before{
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-top: 5px solid var(--skin-color);
+        border-left: 5px solid var(--skin-color);
+        left: -2px;
+        top: -18px;
     }
 
 }
