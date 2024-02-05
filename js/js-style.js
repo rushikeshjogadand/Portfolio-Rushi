@@ -18,10 +18,13 @@ function HideNave(){
   if(aside.style.display=="block"){
     aside.style.display="none";
     icon.style.left="0"
+
   }
   else{
+
     aside.style.display="block";
-    icon.style.left="77px"
+    icon.style.left="67px"
+    
   }
 }
 
