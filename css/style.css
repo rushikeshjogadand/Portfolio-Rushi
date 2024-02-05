@@ -487,9 +487,6 @@ h3.my-profession{
     text-align: justify;
     color: var(--text-black-700);
 }
-.em{
-    padding: 0px;
-}
 .service .container{
     padding-bottom: 40px;
 }
@@ -694,6 +691,57 @@ textarea.form-control{
     .aside{
         left: -270px;
     }
+    .aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        background: var(--bg-black-100);
+        position: fixed;
+        left: 0;
+        height: 100%;
+        top: 0;
+        padding: 2px;
+        z-index: 1;
+        border-right: 1px solid var(--bg-black-50);
+    }
+    .aside .logo{
+        position: absolute;
+        top: 30px;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    .aside .logo a{
+        font-size: 20px;
+    }
+    .aside .logo a span{
+        font-size: 24px;
+        color: red;
+    }
+    .aside .logo a::before{
+        border: none;
+    
+    }
+    .aside .logo a::after{
+      border: none;
+    }
+    .aside .nav{
+        margin-top: 0px;
+    }
+    .aside .nav li{
+        margin-bottom: 20px;
+    }
+    .aside .nav li a{
+        font-size: 14px;
+        padding: 0px;
+    }
+
+
+
+
+
+
+
     .main-content{
         padding-left: 0px;
     }
@@ -740,6 +788,9 @@ textarea.form-control{
         left: -2px;
         top: -18px;
     }
+    .em{
+        padding: 0px;
+    }
 
 }
 
@@ -754,6 +805,9 @@ textarea.form-control{
     .about .about-content .personal-info{
         flex:  0 0 100%;
         max-width: 100%;
+    }
+    .em{
+        padding: 0px;
     }
 }
 
