@@ -689,25 +689,19 @@ textarea.form-control{
 
 @media (max-width:1199px){
     .aside{
-        left: -270px;
-    }
-    .aside{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display:block;
+        justify-content: space-around;
+        align-items: flex-start;
         width: 90px;
         background: var(--bg-black-100);
         position: fixed;
-        left: 0;
         height: 100%;
-        top: 0;
         padding: 2px;
         z-index: 1;
-        border-right: 1px solid var(--bg-black-50);
     }
     .aside .logo{
-        position: absolute;
-        top: 30px;
+        position:relative;
+        top: 10px;
         font-size: 30px;
         text-transform: capitalize;
     }
