@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <body >
     <div class="main-container">
@@ -449,30 +450,30 @@
                     <h3 class="contact-title padd-15"> SEND ME AN EMAIL</h3>
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <form action="">
+                            <form name="submit-to-google-sheet" >
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name">
+                                            <input type="text" name="Name" class="form-control" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="email" name="Email" class="form-control" placeholder="Email">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject">
+                                            <input type="text" name="Subject" class="form-control" placeholder="Subject">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <textarea class="form-control" name="" id="" placeholder="Message"></textarea>
+                                            <textarea class="form-control" name="Message" id="" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -480,10 +481,14 @@
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
                                            <button type="submit" class="btn"> Send Message</button>
+                                           
+                                           <span id="sms">  </span>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -493,7 +498,7 @@
     </div>
     <div class="style-switcher">
         <div  class="day-night s-icon">
-            <i  onclick="toggleDarkTheme()" class="fa fa-moon"></i>
+            <i id="darkicon"  onclick="toggleDarkTheme()" class="bi bi-moon-fill"></i>
         </div>
 
     </div>

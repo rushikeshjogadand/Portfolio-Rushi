@@ -1,31 +1,33 @@
-// const dayNight = document.querySelector(".day-night");
 
-    // function darkmode(){
-    //     alert("d")
-    //     var mee = document.getElementById("me");
-    //     mee.style.backgroundColor="red"
-    //     alert("hhhjjjjjjjjjj")
-    //     // dayNight.querySelector("i").classList.toggle("fa-sun");
-    //     // dayNight.querySelector("i").classList.add("fa-moon");
-    //     // document.body.classList.toggle("dark")
-    // }
-   
-
-// window.addEventListener("load" , () => {
-//     if(document.body.classList.contains("dark")){
-//         dayNight.querySelector("i").classList.add("fa-sun");
-//     }
-//     else{
-//         dayNight.querySelector("i").classList.add("fa-moon");
-//     }
-// })
-
-// const themeToggle = document.getElementById('theme-toggle');
-
-// Function to toggle the dark theme
-function toggleDarkTheme(x) {
+function toggleDarkTheme() {
+    var dark = document.getElementById("darkicon");
    document.body.classList.toggle('dark-theme');
-   x.className.toggle("fa-sun");
+   if(dark.className==="bi bi-moon-fill"){
+        dark.className="bi bi-sun-fill"
+   }
+   else{
+    dark.className="bi bi-moon-fill";
+   }
+
    
 }
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby4KKpaAHvgif6nr58Cn9boi-M87pb0xcGX7w-JmbYlgUt-RJcPFJGAc2NdoiIJHxVi/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("sms");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Send Successfully"
+        msg.className="bi bi-check-circle-fill";
+        setTimeout(function(){
+            msg.innerHTML="";
+            msg.className="";
+        },5000)
+        form.reset(); 
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 

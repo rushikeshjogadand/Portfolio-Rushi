@@ -504,12 +504,12 @@ h3.my-profession{
     font-size: 40px;
     line-height: 60px;
     color: orangered;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     
 }
 .service .service-item .service-item-inner:hover .icon{
     background-color: var(--skin-color);
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 .service .service-item .service-item-inner:hover .icon .fa{
     font-size: 25px;
@@ -658,14 +658,18 @@ textarea.form-control{
     border: 1px solid var(--bg-black-50);
     margin-right: 25px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.9s ease;
     border-radius: 50%;
     line-height: 40px;
     
 }
-/* .day-night{
-    top: 55px;
-} */
+#sms{
+    color: #61b762;
+    margin-top: 20px;
+    display: block;
+
+}
+
 @media (max-width:1199px){
     .aside{
         left: -270px;
