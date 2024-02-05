@@ -9,8 +9,20 @@ function toggleDarkTheme() {
    else{
     dark.className="bi bi-moon-fill";
    }
+}
 
-   
+function HideNave(){
+  var icon = document.getElementById("icon1");
+  var aside = document.getElementById("aside");
+  var section = document.getElementsByClassName("section");
+  if(aside.style.display=="block"){
+    aside.style.display="none";
+    icon.style.left="0"
+  }
+  else{
+    aside.style.display="block";
+    icon.style.left="75px"
+  }
 }
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycby4KKpaAHvgif6nr58Cn9boi-M87pb0xcGX7w-JmbYlgUt-RJcPFJGAc2NdoiIJHxVi/exec'
