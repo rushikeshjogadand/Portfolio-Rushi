@@ -161,6 +161,7 @@ ul {
     padding: 30px;
     z-index: 10;
     border-right: 1px solid var(--bg-black-50);
+    transition: all 0.5s ease;
 }
 
 .aside .logo {
@@ -286,6 +287,7 @@ ul {
 #home {
     display: flex;
     justify-content: space-between;
+    
     flex-wrap: wrap;
 }
 
@@ -814,10 +816,20 @@ textarea.form-control {
         position: fixed;
         display: block;
         z-index: 10;
-        font-size: 27px;
+        font-size: 29px;
         font-weight: bolder;
-        top: 0;
-        left:0;
+        top: 6px;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        color: var(--text-black-900);
+        background: var(--bg-black-100);
+        border: 1px solid var(--bg-black-50);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        border-radius: 50%;
+        line-height: 40px;
     }
 
     .aside {
@@ -830,7 +842,7 @@ textarea.form-control {
         height: 100%;
         padding: 2px;
         z-index: 1;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease;
     }
 
     .aside .logo {
@@ -838,6 +850,7 @@ textarea.form-control {
         top: 10px;
         font-size: 30px;
         text-transform: capitalize;
+        transition: all 0.5s ease;
     }
 
     .aside .logo a {
@@ -952,5 +965,26 @@ textarea.form-control {
 
     .em {
         padding: 0px;
+    }
+    .home-img::after {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-bottom: 5px solid var(--skin-color);
+        border-right: 5px solid var(--skin-color);
+        right: 1px;
+        bottom: -10px;
+    }
+
+    .home-img::before {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-top: 5px solid var(--skin-color);
+        border-left: 5px solid var(--skin-color);
+        left: 1px;
+        top: -20px;
     }
 }

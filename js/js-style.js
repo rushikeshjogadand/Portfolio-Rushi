@@ -12,6 +12,7 @@ function toggleDarkTheme() {
 }
 
 function HideNave(){
+  
   var icon = document.getElementById("icon1");
   var aside = document.getElementById("aside");
   var section = document.getElementsByClassName("section");
@@ -21,10 +22,8 @@ function HideNave(){
 
   }
   else{
-
     aside.style.display="block";
-    icon.style.left="67px"
-    
+    icon.style.left="62px"
   }
 }
 
