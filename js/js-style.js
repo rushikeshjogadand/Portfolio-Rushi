@@ -21,7 +21,7 @@ function HideNave(){
   }
   else{
     aside.style.display="block";
-    icon.style.left="75px"
+    icon.style.left="77px"
   }
 }
 
