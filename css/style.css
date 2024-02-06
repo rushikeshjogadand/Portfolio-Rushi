@@ -922,25 +922,11 @@ textarea.form-control {
     }
 
     .home-img::after {
-        content: '';
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-bottom: 5px solid var(--skin-color);
-        border-right: 5px solid var(--skin-color);
-        right: -115px;
-        bottom: -15px;
+        border: none;
     }
 
     .home-img::before {
-        content: '';
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-top: 5px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
-        left: -2px;
-        top: -18px;
+       border: none;
     }
 
     .em {
@@ -967,24 +953,10 @@ textarea.form-control {
         padding: 0px;
     }
     .home-img::after {
-        content: '';
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-bottom: 5px solid var(--skin-color);
-        border-right: 5px solid var(--skin-color);
-        right: 1px;
-        bottom: -10px;
+      border: none;
     }
 
     .home-img::before {
-        content: '';
-        position: absolute;
-        height: 80px;
-        width: 80px;
-        border-top: 5px solid var(--skin-color);
-        border-left: 5px solid var(--skin-color);
-        left: 1px;
-        top: -20px;
+        border: none;
     }
 }
