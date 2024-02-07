@@ -3,8 +3,7 @@ function toggleDarkTheme() {
     var dark = document.getElementById("darkicon");
    document.body.classList.toggle('dark-theme');
    if(dark.className==="bi bi-moon-fill"){
-        dark.className="bi bi-sun-fill"
-   
+      dark.className="bi bi-sun-fill"
    }
    else{
     dark.className="bi bi-moon-fill";
@@ -12,14 +11,11 @@ function toggleDarkTheme() {
 }
 
 function HideNave(){
-  
   var icon = document.getElementById("icon1");
   var aside = document.getElementById("aside");
-  var section = document.getElementsByClassName("section");
   if(aside.style.display=="block"){
     aside.style.display="none";
     icon.style.left="0"
-
   }
   else{
     aside.style.display="block";
@@ -45,3 +41,9 @@ function HideNave(){
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+function Paste(){
+  alert("You cannot performing Paste")
+  return false;
+}
+
