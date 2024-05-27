@@ -825,6 +825,8 @@ textarea.form-control {
         transition: all 0.5s ease;
     }
 
+
+
     .aside .logo {
         position: relative;
         top: 10px;
@@ -864,12 +866,6 @@ textarea.form-control {
         padding: 0px;
     }
 
-
-
-
-
-
-
     .main-content {
         padding-left: 0px;
     }
@@ -897,16 +893,8 @@ textarea.form-control {
     }
 
     .home-img {
-        margin-top: 70px;
+        margin-top: 40px;
         margin-left: 20px;
-    }
-
-    .home-img::after {
-        border: none;
-    }
-
-    .home-img::before {
-       border: none;
     }
 
     .em {
@@ -932,11 +920,22 @@ textarea.form-control {
     .em {
         padding: 0px;
     }
-    .home-img::after {
-      border: none;
+    
+  
+}
+
+
+@media (min-width:765px){
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 50%;
+        background-color: #ec1839;
+       
     }
 
-    .home-img::before {
-        border: none;
+    .home-img {
+        margin-top: 0px;
+        margin-left: 20px;
+        background-color: #ec1839;
     }
 }
