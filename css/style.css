@@ -141,11 +141,7 @@ ul {
 
 .hideicon {
     display: none;
-    /* font-size: 20px;
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 255px; */
+
 }
 
 .aside {
@@ -279,7 +275,8 @@ ul {
 }
 
 .home {
-    min-height: 80vh;
+    padding-top: 50px;
+    min-height: 40vh;
     display: flex;
     color: var(--text-black-900);
 }
@@ -899,7 +896,6 @@ textarea.form-control {
     .em {
         padding: 0px;
     }
-
 }
 
 @media (max-width:767px) {
@@ -922,7 +918,6 @@ textarea.form-control {
     
   
 }
-
 
 @media (min-width:765px){
     .home .home-info {
