@@ -929,4 +929,7 @@ textarea.form-control {
         margin-top: 0px;
         margin-left: 20px;
     }
+    .home{
+        padding-top: 0px;
+    }
 }
