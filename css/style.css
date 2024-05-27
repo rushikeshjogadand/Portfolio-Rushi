@@ -354,27 +354,7 @@ h3.my-profession {
     position: relative;
 }
 
-.home-img::after {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 7px solid var(--skin-color);
-    border-right: 7px solid var(--skin-color);
-    right: 50px;
-    bottom: -20px;
-}
 
-.home-img::before {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 7px solid var(--skin-color);
-    border-left: 7px solid var(--skin-color);
-    left: 50px;
-    top: -24px;
-}
 
 .home .home-img img {
     margin: auto;
